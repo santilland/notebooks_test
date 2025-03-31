@@ -1,0 +1,26 @@
+author: Your Name
+execute:
+  execute_notebooks: false
+html:
+  use_issues_button: true
+  use_repository_button: true
+launch_buttons:
+  binderhub_url: https://mybinder.org
+  jupyterhub_url: https://your-jupyterhub.com
+parse:
+  myst_enable_extensions:
+  - html_admonition
+  - html_image
+  - substitution
+  - dollarmath
+  - linkify
+  - colon_fence
+repository:
+  url: https://github.com/your-org/central-catalog
+substitutions:
+  notebooks:
+  - name: Example1
+    path: notebooks/example1.ipynb
+  - name: Example2
+    path: notebooks/example2.ipynb
+title: Jupyter Notebook Catalog
