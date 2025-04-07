@@ -16,20 +16,24 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.9"
+          python-version: "3.10"
 
       - name: Install Dependencies
         run: |
           pip install -r requirements.txt
 
-      - name: Generate Notebook List
-        run: python generate_notebook_list.py
-
       - name: Build Jupyter Book
         run: jupyter book build
 
+      - name: Generate Notebook List
+        run: |
+          python .github/workflows/generate_notebook_list.py
+          cp index.html _build/html/index.html
+
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_build/html
+          folder: .vitepress/dist/
+          branch: gh-pages
+          clean-exclude: pr-preview
+          force: false

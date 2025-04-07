@@ -21,8 +21,8 @@ for filename in sorted(os.listdir(NOTEBOOKS_DIR)):
             "gitpuller": f"https://{jupyterhub_instance}/hub/user-redirect/git-pull?repo={gh_url}&urlpath={NOTEBOOKS_DIR}/{filename}&branch=master",
         })
 
-# Save as `notebooks.md`
-with open("_data/notebooks.json", "w") as f:
+# Save as build folder
+with open("_build/html/notebooks.json", "w") as f:
     json.dump({"notebooks": notebooks}, f, indent=2)
 
 print(f"✅ Processed {len(notebooks)} notebooks and updated `notebooks.json`.")
