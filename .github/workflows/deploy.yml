@@ -23,7 +23,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Build Jupyter Book
-        run: jupyter book build
+        run: jupyter book build --html
 
       - name: Generate Notebook List
         run: |
