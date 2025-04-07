@@ -22,7 +22,7 @@ for filename in sorted(os.listdir(NOTEBOOKS_DIR)):
         })
 
 # Save as build folder
-with open("_build/html/notebooks.json", "w") as f:
+with open("notebooks.json", "w") as f:
     json.dump({"notebooks": notebooks}, f, indent=2)
 
 print(f"✅ Processed {len(notebooks)} notebooks and updated `notebooks.json`.")

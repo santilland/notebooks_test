@@ -28,6 +28,7 @@ jobs:
       - name: Generate Notebook List
         run: |
           python .github/workflows/generate_notebook_list.py
+          cp notebooks.json _build/html/notebooks.json
           cp index.html _build/html/index.html
 
       - name: Deploy to GitHub Pages
