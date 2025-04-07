@@ -61,7 +61,7 @@
     const el = document.getElementById('catalog');
 
     // Fetch the JSON and pass it to the element
-    fetch('/_data/notebooks.json')
+    fetch('./notebooks.json')
       .then(res => res.json())
       .then(data => {
         Object.assign(el, {
