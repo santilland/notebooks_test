@@ -114,7 +114,7 @@ def collect_notebooks():
                     "repo": DEF_REPO,
                     "source": "local",
                     "path": rel_path,
-                    "gitpuller": f"https://{JHUB_INSTANCE}/hub/user-redirect/git-pull?repo={git_url}&urlpath={rel_path}&branch=master",
+                    "gitpuller": f"https://{JHUB_INSTANCE}/hub/user-redirect/git-pull?repo={git_url}&urlpath={rel_path}&branch=main",
                 })
 
     # --- Submodule notebooks
@@ -150,7 +150,7 @@ def collect_notebooks():
                             "repo": git_info["repo"],
                             "source": "submodule",
                             "path": rel_path,
-                            "gitpuller": f"https://{JHUB_INSTANCE}/hub/user-redirect/git-pull?repo={git_url}&urlpath={repo_path}&branch=master",
+                            "gitpuller": f"https://{JHUB_INSTANCE}/hub/user-redirect/git-pull?repo={git_url}&urlpath={repo_path}&branch=main",
                         })
 
     return catalog
