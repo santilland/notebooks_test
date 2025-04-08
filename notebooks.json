@@ -1,16 +1,24 @@
-{
-  "notebooks": [
-    {
-      "name": "Example1",
-      "path": "notebooks/example1.ipynb",
-      "href": "notebooks/example1.html",
-      "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/example1.ipynb&branch=master"
-    },
-    {
-      "name": "Example2",
-      "path": "notebooks/example2.ipynb",
-      "href": "notebooks/example2.html",
-      "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/example2.ipynb&branch=master"
-    }
-  ]
-}
+[
+  {
+    "title": "example2",
+    "description": "",
+    "metadata": {},
+    "link": "notebooks/example2",
+    "org": "santilland",
+    "repo": "notebooks_test",
+    "source": "local",
+    "path": "notebooks/example2.ipynb",
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/santilland/notebooks_test&urlpath=notebooks/example2.ipynb&branch=master"
+  },
+  {
+    "title": "example1",
+    "description": "",
+    "metadata": {},
+    "link": "notebooks/example1",
+    "org": "santilland",
+    "repo": "notebooks_test",
+    "source": "local",
+    "path": "notebooks/example1.ipynb",
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/santilland/notebooks_test&urlpath=notebooks/example1.ipynb&branch=master"
+  }
+]
