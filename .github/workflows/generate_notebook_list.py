@@ -89,6 +89,13 @@ def extract_frontmatter(notebook_path):
         print(f"[warn] Failed to extract frontmatter from {notebook_path}: {e}")
     return {}
 
+def myst_url_sanitation(url):
+    clean_url = url.replace("_-_","-").replace("_", "-").replace(" ", "-").replace("..", "").replace(":", "").replace("'", "").replace('"', "").lower()
+    parts = clean_url.split("/")
+    cut_url = "/".join(parts[0:-1] + [parts[-1][:50]])
+    return cut_url
+
+
 def collect_notebooks():
     catalog = []
     git_url = get_git_remote_info(ROOT_DIR)["url"]
@@ -109,7 +116,7 @@ def collect_notebooks():
                     "title": meta.get("title", os.path.splitext(file)[0]),
                     "description": meta.get("description", ""),
                     "metadata": meta,
-                    "link": rel_path.replace(".ipynb", ""),
+                    "link": myst_url_sanitation(rel_path.replace(".ipynb", "")),
                     "org": DEF_ORG,
                     "repo": DEF_REPO,
                     "source": "local",
@@ -145,7 +152,7 @@ def collect_notebooks():
                             "title": meta.get("title", os.path.splitext(file)[0]),
                             "description": meta.get("description", ""),
                             "metadata": meta,
-                            "link": rel_path.replace(".ipynb", ""),
+                            "link": myst_url_sanitation(rel_path.replace(".ipynb", "")),
                             "org": git_info["org"],
                             "repo": git_info["repo"],
                             "source": "submodule",
