@@ -1,0 +1,980 @@
+Merging patches ...
+Done!!!
+Mininum
+65.54285
+Mininum2
+65.54285
+Nonperc:100.0
+Values are
+max: 199.5291 min: 65.54285 median: 110.75297 mean:118.91766 std:35.70283 count: 2
+2022-04-11
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=76.986721,28.4148,77.44672100000001,28.8748&TIME=2022-04-11/2022-04-11
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+64.71674
+Mininum2
+64.71674
+Nonperc:100.0
+Values are
+max: 166.80103 min: 64.71674 median: 100.592026 mean:105.39084 std:27.533527 count: 4
+2022-04-25
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=76.986721,28.4148,77.44672100000001,28.8748&TIME=2022-04-25/2022-04-25
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+65.71992
+Mininum2
+65.71992
+Nonperc:100.0
+Values are
+max: 138.84875 min: 65.71992 median: 103.85907 mean:105.28831 std:17.144781 count: 2
+2022-05-09
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=76.986721,28.4148,77.44672100000001,28.8748&TIME=2022-05-09/2022-05-09
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+67.37667
+Mininum2
+67.37667
+Nonperc:100.0
+Values are
+max: 132.8068 min: 67.37667 median: 92.23214 mean:95.650475 std:16.361662 count: 1
+2022-05-23
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=76.986721,28.4148,77.44672100000001,28.8748&TIME=2022-05-23/2022-05-23
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+57.483536
+Mininum2
+57.483536
+Nonperc:100.0
+Values are
+max: 145.69078 min: 57.483536 median: 98.04143 mean:99.07749 std:23.998857 count: 2
+2022-06-06
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=76.986721,28.4148,77.44672100000001,28.8748&TIME=2022-06-06/2022-06-06
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+45.104332
+Mininum2
+45.104332
+Nonperc:100.0
+Values are
+max: 118.295395 min: 45.104332 median: 73.3521 mean:75.13431 std:19.32178 count: 2
+2022-06-20
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=76.986721,28.4148,77.44672100000001,28.8748&TIME=2022-06-20/2022-06-20
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+55.703728
+Mininum2
+55.703728
+Nonperc:100.0
+Values are
+max: 143.56902 min: 55.703728 median: 100.31078 mean:98.190765 std:21.25126 count: 1
+2022-07-04
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=76.986721,28.4148,77.44672100000001,28.8748&TIME=2022-07-04/2022-07-04
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+nan
+Mininum2
+nan
+Nonperc:0.0
+Values are
+max: nan min: nan median: nan mean:nan std:nan count: 1
+NaN conditions verified
+###############################
+City:Mumbai
+19.076,72.8777
+POLYGON((72.57770000000001 18.776,73.1777 18.776,73.1777 19.376,72.57770000000001 19.376,72.57770000000001 18.776))
+POLYGON((72.57770000000001 18.776,73.1777 18.776,73.1777 19.376,72.57770000000001 19.376,72.57770000000001 18.776))
+Mumbai
+start 2021-01-04
+stop 2022-07-18
+2021-01-04
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-01-04/2021-01-04
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+32.426636
+Mininum2
+32.426636
+Nonperc:100.0
+Values are
+max: 259.41187 min: 32.426636 median: 93.74785 mean:105.62983 std:48.226727 count: 2
+2021-01-18
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-01-18/2021-01-18
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+33.1036
+Mininum2
+33.1036
+Nonperc:100.0
+Values are
+max: 312.32895 min: 33.1036 median: 84.45259 mean:95.01935 std:52.489338 count: 2
+2021-02-01
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-02-01/2021-02-01
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+41.08118
+Mininum2
+41.08118
+Nonperc:100.0
+Values are
+max: 220.17653 min: 41.08118 median: 89.21038 mean:99.45983 std:37.611195 count: 2
+2021-02-15
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-02-15/2021-02-15
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+34.35698
+Mininum2
+34.35698
+Nonperc:100.0
+Values are
+max: 159.08794 min: 34.35698 median: 74.32264 mean:77.730835 std:27.618923 count: 1
+2021-03-01
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-03-01/2021-03-01
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+39.144733
+Mininum2
+39.144733
+Nonperc:100.0
+Values are
+max: 164.26093 min: 39.144733 median: 81.76181 mean:83.18683 std:27.150404 count: 2
+2021-03-15
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-03-15/2021-03-15
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+38.61396
+Mininum2
+38.61396
+Nonperc:100.0
+Values are
+max: 152.85007 min: 38.61396 median: 71.94039 mean:74.06758 std:23.495468 count: 1
+2021-03-29
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-03-29/2021-03-29
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+17.4512
+Mininum2
+17.4512
+Nonperc:100.0
+Values are
+max: 104.36501 min: 17.4512 median: 42.35424 mean:47.348755 std:23.127295 count: 4
+2021-04-12
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-04-12/2021-04-12
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+16.036106
+Mininum2
+16.036106
+Nonperc:100.0
+Values are
+max: 92.42376 min: 16.036106 median: 41.575485 mean:44.71244 std:20.616169 count: 1
+2021-04-26
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-04-26/2021-04-26
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+15.551056
+Mininum2
+15.551056
+Nonperc:100.0
+Values are
+max: 108.627754 min: 15.551056 median: 41.362907 mean:46.460747 std:23.667664 count: 2
+2021-05-10
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-05-10/2021-05-10
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+8.2909155
+Mininum2
+8.2909155
+Nonperc:100.0
+Values are
+max: 83.74342 min: 8.2909155 median: 25.042658 mean:31.516666 std:18.388542 count: 1
+2021-05-24
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-05-24/2021-05-24
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+14.601136
+Mininum2
+14.601136
+Nonperc:100.0
+Values are
+max: 62.95427 min: 14.601136 median: 30.517761 mean:33.523113 std:11.922578 count: 2
+2021-06-07
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-06-07/2021-06-07
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+6.5734024
+Mininum2
+6.5734024
+Nonperc:99.1869918699187
+Values are
+max: 70.43785 min: 6.5734024 median: 25.839445 mean:28.553988 std:11.559175 count: 4
+2021-06-21
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-06-21/2021-06-21
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+10.811342
+Mininum2
+10.811342
+Nonperc:100.0
+Values are
+max: 51.423847 min: 10.811342 median: 22.086447 mean:24.483965 std:8.117291 count: 2
+2021-07-05
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-07-05/2021-07-05
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+13.764702
+Mininum2
+13.764702
+Nonperc:91.99499687304564
+Values are
+max: 147.45152 min: 13.764702 median: 34.412647 mean:43.438404 std:24.679012 count: 2
+2021-07-19
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-07-19/2021-07-19
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+1.0381007
+Mininum2
+1.0381007
+Nonperc:61.60100062539087
+Values are
+max: 36.999104 min: 1.0381007 median: 18.082972 mean:19.018711 std:6.850118 count: 8
+2021-08-02
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-08-02/2021-08-02
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+5.014656
+Mininum2
+5.014656
+Nonperc:88.74296435272045
+Values are
+max: 58.135975 min: 5.014656 median: 20.10741 mean:22.765747 std:10.977958 count: 1
+2021-08-16
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-08-16/2021-08-16
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+7.964167
+Mininum2
+7.964167
+Nonperc:92.9330831769856
+Values are
+max: 95.76478 min: 7.964167 median: 26.625196 mean:34.064888 std:18.854307 count: 1
+2021-08-30
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-08-30/2021-08-30
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+10.327691
+Mininum2
+10.327691
+Nonperc:48.90556597873672
+Values are
+max: 89.070496 min: 10.327691 median: 24.536568 mean:29.556824 std:16.041578 count: 2
+2021-09-13
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-09-13/2021-09-13
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+9.170086
+Mininum2
+9.170086
+Nonperc:93.99624765478424
+Values are
+max: 62.293427 min: 9.170086 median: 23.43127 mean:26.519415 std:9.317744 count: 1
+2021-09-27
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-09-27/2021-09-27
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+26.56105
+Mininum2
+26.56105
+Nonperc:100.0
+Values are
+max: 162.42252 min: 26.56105 median: 55.191467 mean:59.150085 std:21.700993 count: 1
+2021-10-11
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-10-11/2021-10-11
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+25.638649
+Mininum2
+25.638649
+Nonperc:100.0
+Values are
+max: 156.81673 min: 25.638649 median: 56.95308 mean:61.752686 std:26.596903 count: 1
+2021-10-25
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-10-25/2021-10-25
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+34.322914
+Mininum2
+34.322914
+Nonperc:100.0
+Values are
+max: 205.80865 min: 34.322914 median: 66.76524 mean:76.50683 std:33.051056 count: 2
+2021-11-08
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-11-08/2021-11-08
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+30.96716
+Mininum2
+30.96716
+Nonperc:100.0
+Values are
+max: 225.2354 min: 30.96716 median: 73.93671 mean:82.1693 std:33.73484 count: 1
+2021-11-22
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-11-22/2021-11-22
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+45.70033
+Mininum2
+45.70033
+Nonperc:100.0
+Values are
+max: 229.61832 min: 45.70033 median: 81.67806 mean:89.816734 std:31.561413 count: 2
+2021-12-06
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-12-06/2021-12-06
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+35.89594
+Mininum2
+35.89594
+Nonperc:100.0
+Values are
+max: 259.07498 min: 35.89594 median: 81.58961 mean:93.70197 std:43.204613 count: 1
+2021-12-20
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2021-12-20/2021-12-20
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+28.131311
+Mininum2
+28.131311
+Nonperc:100.0
+Values are
+max: 247.47908 min: 28.131311 median: 86.3915 mean:95.34058 std:45.97982 count: 1
+2022-01-03
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2022-01-03/2022-01-03
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+33.724037
+Mininum2
+33.724037
+Nonperc:100.0
+Values are
+max: 230.11615 min: 33.724037 median: 89.5759 mean:95.57284 std:41.062744 count: 1
+2022-01-17
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2022-01-17/2022-01-17
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+31.113768
+Mininum2
+31.113768
+Nonperc:100.0
+Values are
+max: 230.27338 min: 31.113768 median: 76.86324 mean:86.26333 std:39.41977 count: 2
+2022-01-31
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2022-01-31/2022-01-31
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+25.49942
+Mininum2
+25.49942
+Nonperc:100.0
+Values are
+max: 207.99458 min: 25.49942 median: 75.868866 mean:83.697235 std:41.049496 count: 1
+2022-02-14
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2022-02-14/2022-02-14
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+27.482227
+Mininum2
+27.482227
+Nonperc:100.0
+Values are
+max: 214.30345 min: 27.482227 median: 81.00167 mean:86.13494 std:42.201042 count: 2
+2022-02-28
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2022-02-28/2022-02-28
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+43.94846
+Mininum2
+43.94846
+Nonperc:100.0
+Values are
+max: 209.71387 min: 43.94846 median: 83.160675 mean:91.667564 std:33.017807 count: 2
+2022-03-14
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2022-03-14/2022-03-14
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+nan
+Mininum2
+nan
+Nonperc:0.0
+Values are
+max: nan min: nan median: nan mean:nan std:nan count: 1
+NaN conditions verified
+2022-03-28
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2022-03-28/2022-03-28
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+22.675802
+Mininum2
+22.675802
+Nonperc:100.0
+Values are
+max: 155.10818 min: 22.675802 median: 58.555996 mean:64.98346 std:33.156013 count: 1
+2022-04-11
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2022-04-11/2022-04-11
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+21.607534
+Mininum2
+21.607534
+Nonperc:100.0
+Values are
+max: 117.75408 min: 21.607534 median: 51.021523 mean:56.629856 std:25.419619 count: 2
+2022-04-25
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2022-04-25/2022-04-25
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+15.441563
+Mininum2
+15.441563
+Nonperc:100.0
+Values are
+max: 97.41028 min: 15.441563 median: 36.198704 mean:42.864613 std:22.056553 count: 2
+2022-05-09
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2022-05-09/2022-05-09
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+10.503511
+Mininum2
+10.503511
+Nonperc:100.0
+Values are
+max: 77.63843 min: 10.503511 median: 27.29585 mean:33.58516 std:18.34625 count: 2
+2022-05-23
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2022-05-23/2022-05-23
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+14.137791
+Mininum2
+14.137791
+Nonperc:100.0
+Values are
+max: 71.860886 min: 14.137791 median: 24.462696 mean:29.193415 std:13.647917 count: 2
+2022-06-06
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2022-06-06/2022-06-06
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+16.617249
+Mininum2
+16.617249
+Nonperc:100.0
+Values are
+max: 72.18699 min: 16.617249 median: 34.142628 mean:34.98318 std:12.107253 count: 4
+2022-06-20
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2022-06-20/2022-06-20
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+13.5540905
+Mininum2
+13.5540905
+Nonperc:98.43652282676672
+Values are
+max: 123.357574 min: 13.5540905 median: 37.174175 mean:40.508095 std:17.813963 count: 2
+2022-07-04
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=72.57770000000001,18.776,73.1777,19.376&TIME=2022-07-04/2022-07-04
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+nan
+Mininum2
+nan
+Nonperc:0.0
+Values are
+max: nan min: nan median: nan mean:nan std:nan count: 1
+NaN conditions verified
+###############################
+City:Singapore
+1.358235,103.812292
+POLYGON((103.512292 1.058235,104.112292 1.058235,104.112292 1.6582350000000001,103.512292 1.6582350000000001,103.512292 1.058235))
+POLYGON((103.82756989258134 1.379403761756964,103.91958039062821 1.379403761756964,103.91958039062821 1.3011475955753282,103.82756989258134 1.3011475955753282,103.82756989258134 1.379403761756964))
+Singapore
+start 2021-01-04
+stop 2022-07-18
+2021-01-04
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-01-04/2021-01-04
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+33.348793
+Mininum2
+33.348793
+Nonperc:70.0
+Values are
+max: 79.525665 min: 33.348793 median: 68.74196 mean:67.86284 std:12.760516 count: 1
+2021-01-18
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-01-18/2021-01-18
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+25.16441
+Mininum2
+25.16441
+Nonperc:90.0
+Values are
+max: 51.13557 min: 25.16441 median: 40.586624 mean:38.326897 std:5.971833 count: 2
+2021-02-01
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-02-01/2021-02-01
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+32.644733
+Mininum2
+32.644733
+Nonperc:100.0
+Values are
+max: 62.332024 min: 32.644733 median: 41.220898 mean:44.337086 std:8.009222 count: 1
+2021-02-15
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-02-15/2021-02-15
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+181.4343
+Mininum2
+181.4343
+Nonperc:100.0
+Values are
+max: 549.9904 min: 181.4343 median: 380.42206 mean:383.66895 std:88.15408 count: 1
+2021-03-01
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-03-01/2021-03-01
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+40.15873
+Mininum2
+40.15873
+Nonperc:100.0
+Values are
+max: 103.687805 min: 40.15873 median: 65.62605 mean:67.02736 std:12.6965885 count: 1
+2021-03-15
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-03-15/2021-03-15
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+84.4913
+Mininum2
+84.4913
+Nonperc:60.0
+Values are
+max: 120.05433 min: 84.4913 median: 101.95596 mean:103.094635 std:10.896227 count: 1
+2021-03-29
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-03-29/2021-03-29
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+77.3879
+Mininum2
+77.3879
+Nonperc:100.0
+Values are
+max: 283.9031 min: 77.3879 median: 180.10378 mean:165.7194 std:58.643917 count: 1
+2021-04-12
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-04-12/2021-04-12
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+186.08127
+Mininum2
+186.08127
+Nonperc:100.0
+Values are
+max: 250.33836 min: 186.08127 median: 223.22116 mean:223.06586 std:18.94891 count: 1
+2021-04-26
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-04-26/2021-04-26
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+49.655205
+Mininum2
+49.655205
+Nonperc:100.0
+Values are
+max: 133.08224 min: 49.655205 median: 74.07739 mean:78.19128 std:16.858261 count: 1
+2021-05-10
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-05-10/2021-05-10
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+179.97748
+Mininum2
+179.97748
+Nonperc:100.0
+Values are
+max: 232.29532 min: 179.97748 median: 184.79745 mean:192.57785 std:17.232712 count: 9
+2021-05-24
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-05-24/2021-05-24
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+88.237915
+Mininum2
+88.237915
+Nonperc:100.0
+Values are
+max: 143.00471 min: 88.237915 median: 122.54051 mean:119.214485 std:15.134625 count: 1
+2021-06-07
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-06-07/2021-06-07
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+84.75356
+Mininum2
+84.75356
+Nonperc:100.0
+Values are
+max: 168.3159 min: 84.75356 median: 132.22064 mean:135.02235 std:23.950436 count: 1
+2021-06-21
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-06-21/2021-06-21
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+154.14821
+Mininum2
+154.14821
+Nonperc:100.0
+Values are
+max: 308.09827 min: 154.14821 median: 191.40437 mean:207.35527 std:49.8545 count: 2
+2021-07-05
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-07-05/2021-07-05
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+77.12739
+Mininum2
+77.12739
+Nonperc:100.0
+Values are
+max: 115.279274 min: 77.12739 median: 93.16174 mean:95.33488 std:10.9026785 count: 1
+2021-07-19
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-07-19/2021-07-19
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+69.65444
+Mininum2
+69.65444
+Nonperc:100.0
+Values are
+max: 105.75535 min: 69.65444 median: 87.10385 mean:87.6075 std:9.081375 count: 1
+2021-08-02
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-08-02/2021-08-02
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+76.24666
+Mininum2
+76.24666
+Nonperc:100.0
+Values are
+max: 129.12726 min: 76.24666 median: 103.94294 mean:102.4851 std:13.260096 count: 1
+2021-08-16
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-08-16/2021-08-16
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+99.01585
+Mininum2
+99.01585
+Nonperc:100.0
+Values are
+max: 151.76082 min: 99.01585 median: 129.75848 mean:127.808846 std:12.933819 count: 1
+2021-08-30
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-08-30/2021-08-30
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+76.46331
+Mininum2
+76.46331
+Nonperc:100.0
+Values are
+max: 172.39597 min: 76.46331 median: 113.47367 mean:118.1272 std:20.0605 count: 1
+2021-09-13
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-09-13/2021-09-13
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+78.50778
+Mininum2
+78.50778
+Nonperc:100.0
+Values are
+max: 110.84204 min: 78.50778 median: 100.00293 mean:96.56589 std:9.463632 count: 1
+2021-09-27
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-09-27/2021-09-27
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+97.15603
+Mininum2
+97.15603
+Nonperc:100.0
+Values are
+max: 118.923836 min: 97.15603 median: 104.92002 mean:106.06568 std:6.100826 count: 2
+2021-10-11
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-10-11/2021-10-11
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+76.96003
+Mininum2
+76.96003
+Nonperc:100.0
+Values are
+max: 210.5022 min: 76.96003 median: 176.87756 mean:173.15695 std:31.389488 count: 1
+2021-10-25
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-10-25/2021-10-25
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+82.91433
+Mininum2
+82.91433
+Nonperc:96.66666666666667
+Values are
+max: 174.56511 min: 82.91433 median: 107.09181 mean:116.12437 std:24.414541 count: 1
+2021-11-08
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-11-08/2021-11-08
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+215.42635
+Mininum2
+215.42635
+Nonperc:100.0
+Values are
+max: 413.06583 min: 215.42635 median: 304.6921 mean:311.41745 std:61.748123 count: 1
+2021-11-22
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-11-22/2021-11-22
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+172.01581
+Mininum2
+172.01581
+Nonperc:100.0
+Values are
+max: 270.9457 min: 172.01581 median: 218.85196 mean:226.33392 std:25.96353 count: 1
+2021-12-06
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-12-06/2021-12-06
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+43.45155
+Mininum2
+43.45155
+Nonperc:100.0
+Values are
+max: 184.7389 min: 43.45155 median: 113.717804 mean:115.76127 std:30.518377 count: 1
+2021-12-20
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2021-12-20/2021-12-20
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+51.824844
+Mininum2
+51.824844
+Nonperc:100.0
+Values are
+max: 351.81403 min: 51.824844 median: 80.04799 mean:106.303154 std:79.38745 count: 2
+2022-01-03
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2022-01-03/2022-01-03
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+41.87201
+Mininum2
+41.87201
+Nonperc:100.0
+Values are
+max: 68.03734 min: 41.87201 median: 49.476803 mean:51.06813 std:6.0115266 count: 1
+2022-01-17
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2022-01-17/2022-01-17
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+62.644352
+Mininum2
+62.644352
+Nonperc:100.0
+Values are
+max: 93.259926 min: 62.644352 median: 77.84226 mean:76.27429 std:7.033106 count: 1
+2022-01-31
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2022-01-31/2022-01-31
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+30.102922
+Mininum2
+30.102922
+Nonperc:100.0
+Values are
+max: 77.143776 min: 30.102922 median: 59.57691 mean:55.99409 std:11.544332 count: 1
+2022-02-14
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2022-02-14/2022-02-14
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+51.405415
+Mininum2
+51.405415
+Nonperc:100.0
+Values are
+max: 162.37193 min: 51.405415 median: 103.871994 mean:97.53517 std:32.683987 count: 1
+2022-02-28
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2022-02-28/2022-02-28
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+26.228518
+Mininum2
+26.228518
+Nonperc:100.0
+Values are
+max: 104.58301 min: 26.228518 median: 69.15429 mean:66.56187 std:16.338741 count: 1
+2022-03-14
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2022-03-14/2022-03-14
+Downloading patch (0, 0) ...
+Merging patches ...
+Done!!!
+Mininum
+nan
+Mininum2
+nan
+Nonperc:0.0
+Values are
+max: nan min: nan median: nan mean:nan std:nan count: 1
+NaN conditions verified
+2022-03-28
+https://services.sentinel-hub.com/ogc/wms/c1f84418-3731-4b42-b92b-737c47d327a6?version=1.1.1&service=WMS&request=GetMap&format=image/tiff;depth=32f&crs=EPSG:4326&layers=S5P-TW-WEEKLY-NEW&RESX=1627.315m&RESY=1627.315m&BBOX=103.82756989258134,1.3011475955753282,103.91958039062821,1.379403761756964&TIME=2022-03-28/2022-03-28
+Downloading patch (0, 0) ...

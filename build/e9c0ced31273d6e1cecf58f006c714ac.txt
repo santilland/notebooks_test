@@ -1,0 +1,1763 @@
+Uncaught exception GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/661/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/661/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/661/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1) 6.95ms
+Uncaught exception GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/661/1080?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/661/1080?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/661/1080?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1) 1.80ms
+Uncaught exception GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/660/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/660/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/660/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1) 2.27ms
+Uncaught exception GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/660/1080?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/660/1080?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/660/1080?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1) 1.75ms
+Uncaught exception GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/662/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/662/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/662/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1) 1.72ms
+Uncaught exception GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/662/1080?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/662/1080?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/662/1080?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1) 1.65ms
+Uncaught exception GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/661/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/661/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/661/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1) 2.40ms
+Uncaught exception GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/660/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/660/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/11/660/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1) 1.80ms
+Uncaught exception GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/10/330/538?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/10/330/538?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/10/330/538?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1) 2.37ms
+Uncaught exception GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/10/331/538?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/10/331/538?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/10/331/538?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1) 1.75ms
+Uncaught exception GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/10/329/538?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/10/329/538?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/edc~hamburg-NDVI-RGB-subset.zarr/B02/10/329/538?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-08-30T00%3A00%3A00Z (127.0.0.1) 1.70ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/661/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/661/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/661/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 2.48ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/662/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/662/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/662/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.71ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/661/1083?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/661/1083?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/661/1083?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.61ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/661/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/661/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/661/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.63ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/662/1083?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/662/1083?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/662/1083?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.64ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/660/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/660/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/660/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 2.20ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/662/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/662/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/662/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 3.71ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/660/1083?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/660/1083?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/660/1083?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.64ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/660/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/660/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/660/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 2.00ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/663/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/663/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/663/1082?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.90ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/662/1084?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/662/1084?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/662/1084?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 2.68ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/661/1084?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/661/1084?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/661/1084?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.80ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/663/1083?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/663/1083?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/663/1083?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 2.03ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/663/1084?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/663/1084?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/663/1084?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 3.76ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/660/1084?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/660/1084?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/660/1084?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 2.27ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/663/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/663/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/11/663/1081?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 4.04ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/165/269?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/165/269?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/165/269?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 2.38ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/164/269?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/164/269?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/164/269?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 2.29ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/165/270?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/165/270?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/165/270?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.74ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/164/270?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/164/270?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/164/270?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.64ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/165/268?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/165/268?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/165/268?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.62ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/164/268?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/164/268?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/164/268?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.72ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/166/269?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/166/269?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/166/269?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.97ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/163/269?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/163/269?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/163/269?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.67ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/166/270?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/166/270?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/166/270?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.79ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/163/270?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/163/270?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/163/270?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 2.48ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/166/268?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/166/268?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/166/268?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.76ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/163/268?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/163/268?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/163/268?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.64ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/165/271?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/165/271?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/165/271?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.65ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/164/271?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/164/271?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/164/271?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.74ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/166/271?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/166/271?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/166/271?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.69ms
+Uncaught exception GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/163/271?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1)
+HTTPServerRequest(protocol='http', host='hub.eox.at', method='GET', uri='/tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/163/271?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z', version='HTTP/1.1', remote_ip='127.0.0.1')
+Traceback (most recent call last):
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/tornado/web.py", line 1786, in _execute
+    result = await result
+             ^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 354, in get
+    await self._call_method('get', *args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/server/webservers/tornado.py", line 372, in _call_method
+    await method(*args, **kwargs)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 139, in get
+    await super().get(datasetId, varName, z, y, x)
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/routes.py", line 114, in get
+    tile = await self.ctx.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 49, in compute_ml_dataset_tile
+    return _compute_ml_dataset_tile(ctx,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/tiles/controllers.py", line 82, in _compute_ml_dataset_tile
+    ml_dataset = ctx.datasets_ctx.get_ml_dataset(ds_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 183, in get_ml_dataset
+    ml_dataset, _ = self._get_dataset_entry(ds_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 617, in _get_dataset_entry
+    self._set_dataset_entry(self._create_dataset_entry(ds_id))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 629, in _create_dataset_entry
+    dataset_config = self.get_dataset_config(ds_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 479, in get_dataset_config
+    dataset_configs = self.get_dataset_configs()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/conda/eurodatacube6/7f27d6ca559de8798df237a2114a9440d8371b3c509a5646081d0b9c242e4f6c-20230620-101539-524672-159-xcube/lib/python3.11/site-packages/xcube/webapi/datasets/context.py", line 489, in get_dataset_configs
+    assert self._dataset_configs is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+500 GET /tiles/41d1bee9-4570-410a-9b3d-f0df24abb749/B02/9/163/271?crs=EPSG%3A3857&vmin=0&vmax=1&cbar=bone&time=2021-10-01T00%3A00%3A00Z (127.0.0.1) 1.66ms
