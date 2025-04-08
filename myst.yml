@@ -12,17 +12,18 @@ project:
   # license:
   #   code: MIT
   #   content: CC-BY-4.0
-  binder: https://hub.test.eox.at
+  # binder: https://hub.test.eox.at
 binder: https://hub.test.eox.at
 
 site:
   binder: https://hub.test.eox.at
   template: book-theme
   options:
-    binder: https://hub.test.eox.at
-    launch_buttons:
-      jupyterhub_url: https://hub.test.eox.at # can't find this in the docs
-    # hide_toc: true
+    folders: true
+    #binder: https://hub.test.eox.at
+    #launch_buttons:
+    #  jupyterhub_url: https://hub.test.eox.at # can't find this in the docs
+    hide_toc: true
     hide_footer_links: true
     # favicon: favicon.ico
     # logo: site_logo.png
