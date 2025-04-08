@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+        with:
+          submodules: 'true'
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -33,6 +35,7 @@ jobs:
           python .github/workflows/generate_notebook_list.py
           cp notebooks.json _build/html/notebooks.json
           cp index.html _build/html/index.html
+          touch output/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
