@@ -8,7 +8,7 @@
     "repo": "notebooks_test",
     "source": "local",
     "path": "notebooks/example2.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/santilland/notebooks_test&urlpath=notebooks/example2.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/santilland/notebooks_test&urlpath=notebooks/example2.ipynb&branch=main"
   },
   {
     "title": "example1",
@@ -19,7 +19,7 @@
     "repo": "notebooks_test",
     "source": "local",
     "path": "notebooks/example1.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/santilland/notebooks_test&urlpath=notebooks/example1.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/santilland/notebooks_test&urlpath=notebooks/example1.ipynb&branch=main"
   },
   {
     "title": "README",
@@ -30,7 +30,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/README.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/README.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/README.ipynb&branch=main"
   },
   {
     "title": "HowToLULC_batch_updated_210621",
@@ -41,7 +41,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/HowToLULC_batch_updated_210621.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/HowToLULC_batch_updated_210621.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/HowToLULC_batch_updated_210621.ipynb&branch=main"
   },
   {
     "title": "LPS2022_Leverage_Euro_Data_Cube_Services",
@@ -52,7 +52,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/LPS2022_Leverage_Euro_Data_Cube_Services.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/LPS2022_Leverage_Euro_Data_Cube_Services.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/LPS2022_Leverage_Euro_Data_Cube_Services.ipynb&branch=main"
   },
   {
     "title": "Gran_Chaco_phiweek",
@@ -63,7 +63,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/Gran_Chaco_phiweek.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/Gran_Chaco_phiweek.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/Gran_Chaco_phiweek.ipynb&branch=main"
   },
   {
     "title": "Detect_Trucks_Sentinel2",
@@ -74,7 +74,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/Detect_Trucks_Sentinel2.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/Detect_Trucks_Sentinel2.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/Detect_Trucks_Sentinel2.ipynb&branch=main"
   },
   {
     "title": "RACE_FinishedGoodsInventory_inidcator",
@@ -85,7 +85,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/RACE_FinishedGoodsInventory_inidcator.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/RACE_FinishedGoodsInventory_inidcator.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/RACE_FinishedGoodsInventory_inidcator.ipynb&branch=main"
   },
   {
     "title": "no2-so2-trend-veda-api-igarss-2023",
@@ -96,7 +96,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/no2-so2-trend-veda-api-igarss-2023.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/no2-so2-trend-veda-api-igarss-2023.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/no2-so2-trend-veda-api-igarss-2023.ipynb&branch=main"
   },
   {
     "title": "Batch_Zarr_output",
@@ -107,7 +107,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/Batch_Zarr_output.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/Batch_Zarr_output.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/Batch_Zarr_output.ipynb&branch=main"
   },
   {
     "title": "edc_notebook_lstm",
@@ -118,7 +118,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/edc_notebook_lstm.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/edc_notebook_lstm.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/edc_notebook_lstm.ipynb&branch=main"
   },
   {
     "title": "openeo-client-demo",
@@ -129,7 +129,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/openeo-client-demo.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/openeo-client-demo.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/openeo-client-demo.ipynb&branch=main"
   },
   {
     "title": "edc_byoc_tutorial",
@@ -140,7 +140,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/edc_byoc_tutorial.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/edc_byoc_tutorial.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/edc_byoc_tutorial.ipynb&branch=main"
   },
   {
     "title": "eurocrops-crop-classification-example",
@@ -151,7 +151,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/eurocrops-crop-classification-example.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/eurocrops-crop-classification-example.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/eurocrops-crop-classification-example.ipynb&branch=main"
   },
   {
     "title": "Drought_Monitoring",
@@ -162,7 +162,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/Drought_Monitoring.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/Drought_Monitoring.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/Drought_Monitoring.ipynb&branch=main"
   },
   {
     "title": "NO2_Analysis_Covid19_Lockdowns",
@@ -173,7 +173,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/NO2_Analysis_Covid19_Lockdowns.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/NO2_Analysis_Covid19_Lockdowns.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/NO2_Analysis_Covid19_Lockdowns.ipynb&branch=main"
   },
   {
     "title": "xcube-viewer-as-a-service-in-edc1",
@@ -184,7 +184,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/xcube-viewer-as-a-service-in-edc1.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/xcube-viewer-as-a-service-in-edc1.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/xcube-viewer-as-a-service-in-edc1.ipynb&branch=main"
   },
   {
     "title": "AIREO_pilot_dataset_-_CAP",
@@ -195,7 +195,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/AIREO_pilot_dataset_-_CAP.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/AIREO_pilot_dataset_-_CAP.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/AIREO_pilot_dataset_-_CAP.ipynb&branch=main"
   },
   {
     "title": "EDC_Usecase-LPIS_Crop-Type-Classification",
@@ -206,7 +206,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/EDC_Usecase-LPIS_Crop-Type-Classification.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/EDC_Usecase-LPIS_Crop-Type-Classification.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/EDC_Usecase-LPIS_Crop-Type-Classification.ipynb&branch=main"
   },
   {
     "title": "Third-party_PlanetScope",
@@ -217,7 +217,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/Third-party_PlanetScope.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/Third-party_PlanetScope.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/Third-party_PlanetScope.ipynb&branch=main"
   },
   {
     "title": "cmems_data_download",
@@ -228,7 +228,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/cmems_data_download.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/cmems_data_download.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/cmems_data_download.ipynb&branch=main"
   },
   {
     "title": "LPIS_LULC-Slo",
@@ -239,7 +239,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/LPIS_LULC-Slo.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/LPIS_LULC-Slo.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/LPIS_LULC-Slo.ipynb&branch=main"
   },
   {
     "title": "xcube_access_datasets",
@@ -250,7 +250,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/xcube_access_datasets.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/xcube_access_datasets.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/xcube_access_datasets.ipynb&branch=main"
   },
   {
     "title": "EDC_GeoDB_4_eurocrops_demo",
@@ -261,7 +261,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/EDC_GeoDB_4_eurocrops_demo.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/EDC_GeoDB_4_eurocrops_demo.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/EDC_GeoDB_4_eurocrops_demo.ipynb&branch=main"
   },
   {
     "title": "AIREO_pilot_dataset_-_SpaceNet7",
@@ -272,7 +272,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/AIREO_pilot_dataset_-_SpaceNet7.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/AIREO_pilot_dataset_-_SpaceNet7.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/AIREO_pilot_dataset_-_SpaceNet7.ipynb&branch=main"
   },
   {
     "title": "AOT_COVID19",
@@ -283,7 +283,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/AOT_COVID19.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/AOT_COVID19.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/AOT_COVID19.ipynb&branch=main"
   },
   {
     "title": "EDC_demo_phi-week_v2",
@@ -294,7 +294,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/EDC_demo_phi-week_v2.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/EDC_demo_phi-week_v2.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/EDC_demo_phi-week_v2.ipynb&branch=main"
   },
   {
     "title": "GlobalEarthMonitor_example",
@@ -305,7 +305,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/GlobalEarthMonitor_example.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/GlobalEarthMonitor_example.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/GlobalEarthMonitor_example.ipynb&branch=main"
   },
   {
     "title": "AIREO_Pilot_Dataset_-_AI4Arctic_Sea-Ice",
@@ -316,7 +316,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/AIREO_Pilot_Dataset_-_AI4Arctic_Sea-Ice.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/AIREO_Pilot_Dataset_-_AI4Arctic_Sea-Ice.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/AIREO_Pilot_Dataset_-_AI4Arctic_Sea-Ice.ipynb&branch=main"
   },
   {
     "title": "GPU-Support_EOxHub",
@@ -327,7 +327,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/GPU-Support_EOxHub.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/GPU-Support_EOxHub.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/GPU-Support_EOxHub.ipynb&branch=main"
   },
   {
     "title": "client-side-processing-using-mass-sh",
@@ -338,7 +338,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/client-side-processing-using-mass-sh.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/client-side-processing-using-mass-sh.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/client-side-processing-using-mass-sh.ipynb&branch=main"
   },
   {
     "title": "GHSL_Urban_Delineation",
@@ -349,7 +349,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/GHSL_Urban_Delineation.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/GHSL_Urban_Delineation.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/GHSL_Urban_Delineation.ipynb&branch=main"
   },
   {
     "title": "EDC_Africa_cube_Africa_custom_contest",
@@ -360,7 +360,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/EDC_Africa_cube_Africa_custom_contest.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/EDC_Africa_cube_Africa_custom_contest.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/EDC_Africa_cube_Africa_custom_contest.ipynb&branch=main"
   },
   {
     "title": "AIREO_pilot_dataset_-_Biomass_Forest_Observation_System",
@@ -371,7 +371,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/AIREO_pilot_dataset_-_Biomass_Forest_Observation_System.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/AIREO_pilot_dataset_-_Biomass_Forest_Observation_System.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/AIREO_pilot_dataset_-_Biomass_Forest_Observation_System.ipynb&branch=main"
   },
   {
     "title": "ogc-edc",
@@ -382,7 +382,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/ogc-edc.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/ogc-edc.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/ogc-edc.ipynb&branch=main"
   },
   {
     "title": "FAIRiCUBE_data_access_demonstration",
@@ -393,7 +393,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/FAIRiCUBE/FAIRiCUBE_data_access_demonstration.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/FAIRiCUBE/FAIRiCUBE_data_access_demonstration.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/FAIRiCUBE/FAIRiCUBE_data_access_demonstration.ipynb&branch=main"
   },
   {
     "title": "IGARSS-22_Australian_Bushfires",
@@ -404,7 +404,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/IGARSS2022/IGARSS-22_Australian_Bushfires.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/IGARSS2022/IGARSS-22_Australian_Bushfires.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/IGARSS2022/IGARSS-22_Australian_Bushfires.ipynb&branch=main"
   },
   {
     "title": "IGARSS-22_Detect_Trucks_Sentinel2",
@@ -415,7 +415,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/IGARSS2022/IGARSS-22_Detect_Trucks_Sentinel2.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/IGARSS2022/IGARSS-22_Detect_Trucks_Sentinel2.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/IGARSS2022/IGARSS-22_Detect_Trucks_Sentinel2.ipynb&branch=main"
   },
   {
     "title": "IGARSS-22_Timeseries_STAC_API_single_vs_multi",
@@ -426,7 +426,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/IGARSS2022/IGARSS-22_Timeseries_STAC_API_single_vs_multi.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/IGARSS2022/IGARSS-22_Timeseries_STAC_API_single_vs_multi.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/IGARSS2022/IGARSS-22_Timeseries_STAC_API_single_vs_multi.ipynb&branch=main"
   },
   {
     "title": "IGARSS-22_Lockdown_in_Venice",
@@ -437,7 +437,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/IGARSS2022/IGARSS-22_Lockdown_in_Venice.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/IGARSS2022/IGARSS-22_Lockdown_in_Venice.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/IGARSS2022/IGARSS-22_Lockdown_in_Venice.ipynb&branch=main"
   },
   {
     "title": "IGARSS-22_NASA_API_Lockdown_in_Venice",
@@ -448,7 +448,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/IGARSS2022/IGARSS-22_NASA_API_Lockdown_in_Venice.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/IGARSS2022/IGARSS-22_NASA_API_Lockdown_in_Venice.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/IGARSS2022/IGARSS-22_NASA_API_Lockdown_in_Venice.ipynb&branch=main"
   },
   {
     "title": "IGARSS-22_NO2_timeseries_analysis",
@@ -459,7 +459,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/IGARSS2022/IGARSS-22_NO2_timeseries_analysis.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/IGARSS2022/IGARSS-22_NO2_timeseries_analysis.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/IGARSS2022/IGARSS-22_NO2_timeseries_analysis.ipynb&branch=main"
   },
   {
     "title": "IGARSS-22_Data_Access",
@@ -470,7 +470,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/IGARSS2022/IGARSS-22_Data_Access.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/IGARSS2022/IGARSS-22_Data_Access.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/IGARSS2022/IGARSS-22_Data_Access.ipynb&branch=main"
   },
   {
     "title": "DAPA_Tutorial_1_-_Cube_-_Sentinel-2",
@@ -481,7 +481,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/DAPA/DAPA_Tutorial_1_-_Cube_-_Sentinel-2.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/DAPA/DAPA_Tutorial_1_-_Cube_-_Sentinel-2.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/DAPA/DAPA_Tutorial_1_-_Cube_-_Sentinel-2.ipynb&branch=main"
   },
   {
     "title": "DAPA_Tutorial_2_-_Area_-_Sentinel-2",
@@ -492,7 +492,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/DAPA/DAPA_Tutorial_2_-_Area_-_Sentinel-2.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/DAPA/DAPA_Tutorial_2_-_Area_-_Sentinel-2.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/DAPA/DAPA_Tutorial_2_-_Area_-_Sentinel-2.ipynb&branch=main"
   },
   {
     "title": "DAPA_Tutorial_5_-_DEM",
@@ -503,7 +503,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/DAPA/DAPA_Tutorial_5_-_DEM.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/DAPA/DAPA_Tutorial_5_-_DEM.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/DAPA/DAPA_Tutorial_5_-_DEM.ipynb&branch=main"
   },
   {
     "title": "DAPA_Tutorial_3_-_Timeseries_-_Sentinel-2",
@@ -514,7 +514,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/DAPA/DAPA_Tutorial_3_-_Timeseries_-_Sentinel-2.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/DAPA/DAPA_Tutorial_3_-_Timeseries_-_Sentinel-2.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/DAPA/DAPA_Tutorial_3_-_Timeseries_-_Sentinel-2.ipynb&branch=main"
   },
   {
     "title": "DAPA_Tutorial_4_-_Value_-_Sentinel-2",
@@ -525,7 +525,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/DAPA/DAPA_Tutorial_4_-_Value_-_Sentinel-2.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/DAPA/DAPA_Tutorial_4_-_Value_-_Sentinel-2.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/DAPA/DAPA_Tutorial_4_-_Value_-_Sentinel-2.ipynb&branch=main"
   },
   {
     "title": "DAPA_Evaluation_Workshop",
@@ -536,7 +536,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/contributions/DAPA/DAPA_Evaluation_Workshop.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/DAPA/DAPA_Evaluation_Workshop.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/contributions/DAPA/DAPA_Evaluation_Workshop.ipynb&branch=main"
   },
   {
     "title": "EDC_Usecase-NDVI_timeline",
@@ -547,7 +547,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/EDC_Usecase-NDVI_timeline.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_Usecase-NDVI_timeline.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_Usecase-NDVI_timeline.ipynb&branch=main"
   },
   {
     "title": "EDC_Sentinel_Hub-Data-access",
@@ -558,7 +558,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/EDC_Sentinel_Hub-Data-access.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_Sentinel_Hub-Data-access.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_Sentinel_Hub-Data-access.ipynb&branch=main"
   },
   {
     "title": "ESDL_EDC_v0.2",
@@ -569,7 +569,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/ESDL_EDC_v0.2.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/ESDL_EDC_v0.2.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/ESDL_EDC_v0.2.ipynb&branch=main"
   },
   {
     "title": "sentinelhub-py",
@@ -580,7 +580,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/sentinelhub-py.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/sentinelhub-py.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/sentinelhub-py.ipynb&branch=main"
   },
   {
     "title": "How_to_access_DEM_data_through_Sentinel_Hub_API",
@@ -591,7 +591,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/How_to_access_DEM_data_through_Sentinel_Hub_API.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/How_to_access_DEM_data_through_Sentinel_Hub_API.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/How_to_access_DEM_data_through_Sentinel_Hub_API.ipynb&branch=main"
   },
   {
     "title": "EDC_SentinelHub_DataFusion_Basic",
@@ -602,7 +602,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/EDC_SentinelHub_DataFusion_Basic.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_SentinelHub_DataFusion_Basic.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_SentinelHub_DataFusion_Basic.ipynb&branch=main"
   },
   {
     "title": "EDC_Sentinel_Hub-Setup",
@@ -613,7 +613,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/EDC_Sentinel_Hub-Setup.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_Sentinel_Hub-Setup.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_Sentinel_Hub-Setup.ipynb&branch=main"
   },
   {
     "title": "EDC_Sentinel_Hub-XCUBE_integration",
@@ -624,7 +624,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/EDC_Sentinel_Hub-XCUBE_integration.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_Sentinel_Hub-XCUBE_integration.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_Sentinel_Hub-XCUBE_integration.ipynb&branch=main"
   },
   {
     "title": "Access_IACS_data",
@@ -635,7 +635,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/Access_IACS_data.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/Access_IACS_data.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/Access_IACS_data.ipynb&branch=main"
   },
   {
     "title": "EDC_first-steps",
@@ -646,7 +646,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/EDC_first-steps.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_first-steps.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_first-steps.ipynb&branch=main"
   },
   {
     "title": "EDC_GeoDB_3_share-datasets1",
@@ -657,7 +657,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/EDC_GeoDB_3_share-datasets1.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_GeoDB_3_share-datasets1.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_GeoDB_3_share-datasets1.ipynb&branch=main"
   },
   {
     "title": "EDC_GeoDB_1_manage-datasets_v11",
@@ -668,7 +668,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/EDC_GeoDB_1_manage-datasets_v11.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_GeoDB_1_manage-datasets_v11.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_GeoDB_1_manage-datasets_v11.ipynb&branch=main"
   },
   {
     "title": "EDC_Access_CCI_data",
@@ -679,7 +679,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/EDC_Access_CCI_data.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_Access_CCI_data.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_Access_CCI_data.ipynb&branch=main"
   },
   {
     "title": "EDC_SentinelHub_DataFusion_NDVI",
@@ -690,7 +690,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/EDC_SentinelHub_DataFusion_NDVI.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_SentinelHub_DataFusion_NDVI.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_SentinelHub_DataFusion_NDVI.ipynb&branch=main"
   },
   {
     "title": "eo-learn",
@@ -701,7 +701,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/eo-learn.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/eo-learn.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/eo-learn.ipynb&branch=main"
   },
   {
     "title": "EDC_GeoDB_access_Urban_Atlas_Data_v1",
@@ -712,7 +712,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/EDC_GeoDB_access_Urban_Atlas_Data_v1.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_GeoDB_access_Urban_Atlas_Data_v1.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_GeoDB_access_Urban_Atlas_Data_v1.ipynb&branch=main"
   },
   {
     "title": "EDC_GeoDB_2_explore-datasets_2",
@@ -723,7 +723,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/EDC_GeoDB_2_explore-datasets_2.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_GeoDB_2_explore-datasets_2.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_GeoDB_2_explore-datasets_2.ipynb&branch=main"
   },
   {
     "title": "EDC_Sentinel_Hub-Datasets",
@@ -734,7 +734,7 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/EDC_Sentinel_Hub-Datasets.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_Sentinel_Hub-Datasets.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/EDC_Sentinel_Hub-Datasets.ipynb&branch=main"
   },
   {
     "title": "Exploring_time_and_space_with_EDC",
@@ -745,6 +745,6 @@
     "repo": "notebooks",
     "source": "submodule",
     "path": "external_notebooks/eurodatacube/notebooks/notebooks/curated/Exploring_time_and_space_with_EDC.ipynb",
-    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/Exploring_time_and_space_with_EDC.ipynb&branch=master"
+    "gitpuller": "https://dashboard.test1.hub-int.eox.at/hub/user-redirect/git-pull?repo=https://github.com/eurodatacube/notebooks&urlpath=notebooks/curated/Exploring_time_and_space_with_EDC.ipynb&branch=main"
   }
 ]
