@@ -5,6 +5,10 @@ import yaml
 import subprocess
 from urllib.parse import urlparse
 import pathlib
+import re
+import base64
+from PIL import Image
+from io import BytesIO
 
 ROOT_DIR = os.path.abspath(".")
 OUTPUT_FILE = "notebooks.json"
@@ -15,6 +19,35 @@ IGNORE_FOLDERS = ["venv", ".git", ".github", "_build", "_data", "dist"]
 DEF_ORG = "santilland"
 DEF_REPO = "notebooks_test"
 
+def extract_last_image(nb, notebook_rel_path, output_dir="_build/html/build/_assets/previews", target_width=300):
+    os.makedirs(output_dir, exist_ok=True)
+    for cell in reversed(nb.cells):
+        if cell.cell_type == "code":
+            for output in reversed(cell.get("outputs", [])):
+                data = output.get("data", {})
+                if "image/png" in data:
+                    b64 = data["image/png"]
+                    image_bytes = base64.b64decode(b64)
+
+                    try:
+                        # Load image from bytes
+                        image = Image.open(BytesIO(image_bytes))
+                        # Resize while maintaining aspect ratio
+                        w_percent = target_width / float(image.size[0])
+                        h_size = int(float(image.size[1]) * w_percent)
+                        image = image.resize((target_width, h_size), Image.LANCZOS)
+
+                        # Create a filename based on notebook path
+                        base_name = notebook_rel_path.replace("/", "_").replace(".ipynb", "_preview.png")
+                        image_path = os.path.join(output_dir, base_name)
+                        image.save(image_path)
+                        relpath = os.path.join("build/_assets/previews", base_name)
+
+                        return os.path.relpath(relpath, start=".").replace("\\", "/")
+                    except Exception as e:
+                        print(f"[warn] Failed to process image in {notebook_rel_path}: {e}")
+                        return None
+    return None
 
 def parse_gitmodules():
     """Parse .gitmodules to map paths to remote info."""
@@ -95,6 +128,15 @@ def myst_url_sanitation(url):
     cut_url = "/".join(parts[0:-1] + [parts[-1][:50]])
     return cut_url
 
+def extract_title_from_first_header(nb):
+    for cell in nb.cells:
+        if cell.cell_type == "markdown":
+            lines = cell.source.splitlines()
+            for line in lines:
+                match = re.match(r'^\s*#\s+(.*)', line)
+                if match:
+                    return match.group(1).strip()
+    return None
 
 def collect_notebooks():
     catalog = []
@@ -112,10 +154,13 @@ def collect_notebooks():
                 abs_path = os.path.join(dirpath, file)
                 rel_path = os.path.relpath(abs_path, ROOT_DIR).replace("\\", "/")
                 meta = extract_frontmatter(abs_path)
+                nb = nbformat.read(abs_path, as_version=4)
+                image = meta.get("image") or extract_last_image(nb, rel_path)
                 catalog.append({
-                    "title": meta.get("title", os.path.splitext(file)[0]),
+                    "title": meta.get("title", extract_title_from_first_header(nb) or os.path.splitext(file)[0].replace("_", " ")),
                     "description": meta.get("description", ""),
                     "metadata": meta,
+                    "image": image,
                     "link": myst_url_sanitation(rel_path.replace(".ipynb", "")),
                     "org": DEF_ORG,
                     "repo": DEF_REPO,
@@ -148,10 +193,13 @@ def collect_notebooks():
                         p = pathlib.Path(rel_path)
                         repo_path = pathlib.Path(*p.parts[3:])
                         meta = extract_frontmatter(abs_path)
+                        nb = nbformat.read(abs_path, as_version=4)
+                        image = meta.get("image") or extract_last_image(nb, rel_path)
                         catalog.append({
-                            "title": meta.get("title", os.path.splitext(file)[0]),
+                            "title": meta.get("title", extract_title_from_first_header(nb) or os.path.splitext(file)[0].replace("_", " ")),
                             "description": meta.get("description", ""),
                             "metadata": meta,
+                            "image": image,
                             "link": myst_url_sanitation(rel_path.replace(".ipynb", "")),
                             "org": git_info["org"],
                             "repo": git_info["repo"],
